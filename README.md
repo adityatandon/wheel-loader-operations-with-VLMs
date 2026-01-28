@@ -38,4 +38,12 @@ This project uses **TinyLLaMA** as the default base model:
 python -m venv .venv # Create virtual environment
 source .venv/bin/activate
 pip install -r requirements.txt
+```
 
+### 2) Run inference
+```bash
+python scripts/inference_system.py \
+  --model models/tuned_model \
+  --base-model TinyLlama/TinyLlama-1.1B-Chat-v1.0 \
+  --interactive
+```
